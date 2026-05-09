@@ -57,9 +57,9 @@ def get_weather(cidade):
                 "ultima_atualizacao": data["current"]["last_updated"]
             }
 
-            print("=============================================")
+            print("=" * 30)
             print(f"Clima em: {cidade}")
-            print("=============================================")
+            print("=" * 30)
             print(f"Cidade: {data_clima['cidade']}")
             print(f"Região: {data_clima['regiao']}")
             print(f"País: {data_clima['pais']}")
@@ -73,7 +73,7 @@ def get_weather(cidade):
             print(f"Visibilidade: {data_clima['visibilidade_km']} km")
             print(f"Nuvens: {data_clima['nuvens_percentual']}%")
             print(f"Última atualização: {data_clima['ultima_atualizacao']}")
-            print("=============================================\n")
+            print("=" * 30)
 
             return data_clima
 
